@@ -1,0 +1,99 @@
+{
+  "name": "Bruno Assis Carvalho",
+  "position": "Fullstack developer",
+  "socialMedia": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/bruno-assis-carvalho-044095a2/"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/brunoassiscarvalho"
+    }
+  ],
+  "aboutMe": "Um apaixonado por programação e desenvolvedor Java que aprendeu e se transformou em um programador Javascript, e conhecedor de Typescript, curioso e criativo. Para mim, em primeiro lugar, aprender e entender o negócio, depois criar soluções que encantem o cliente.",
+  "education": [
+    {
+      "course": "Bachelor of Business Administration with Specialization in Management Information Systems",
+      "institution": "IESRIVER Instituo de Ensino Superior de Rio Verde"
+    },
+    {
+      "course": "Postgraduate in Mobile Device Development",
+      "institution": "Universitary Center IESB"
+    }
+  ],
+  "certifications": [
+    "Oracle Certified Associate, Java SE 8 Programmer (OCAJP/SCJA)",
+    "Cambridge Linguaskill Certification - Level B1",
+    "Investment Certification - ANBIMA CPA10"
+  ],
+  "experiences": [
+    {
+      "company": "Bank of Brazil (Banco do Brasil S.A)",
+      "posisiton": "Fullstack developer",
+      "jobs": [
+        "Java development with Weblogic, Struts 2",
+        "System migration to AngularJS and API Rest",
+        "Low code framework development. Our team developed a framework in ReactJS, Node and MongoDB to do react-native screens, for our mobile app"
+      ]
+    },
+    {
+      "company": "Totem",
+      "posisiton": "Freelancer Fullstack JEE Developer",
+      "jobs": [
+        "Fullstack developer in Java with JSF, and Oracle SQL data-base"
+      ]
+    },
+    {
+      "company": "Curriculum Seguro",
+      "posisiton": "Freelancer Fullstack Javascript Developer",
+      "jobs": [
+        "Fullstack developer in Javascript with Typescript, NodeJS, ReactJS and MongoDB"
+      ]
+    }
+  ],
+  "knowledges": [
+    {
+      "technology": "Javascript",
+      "detail": "Ecma6 with Typescript"
+    },
+    {
+      "technology": "React",
+      "detail": "ReactJS e React Native with Typescript and Hooks"
+    },
+    {
+      "technology": "MongoDB",
+      "detail": "Queries, agregation, index, schemas with types validationsusing mongoose"
+    },
+    {
+      "technology": "NodeJS",
+      "detail": "Using Express.JS and NodeJS to create API Rest with knowledge of Token JWT and concepts of security, validation and authentication of transactions as well as logging and creation of deployment pipeline on Heroku"
+    },
+    {
+      "technology": "Java",
+      "detail": "Maven, Weblogic for creation of JEE applications using JSF or Struts, and deploy on Weblogic servers"
+    },
+    {
+      "technology": "HTML",
+      "detail": "Knowledge in building HTML pages with styling in CSS, SASS"
+    },
+    {
+      "technology": "Agile methods",
+      "detail": "Participating in agile teams using Scrum and Kambam, sometimes I replaced the Scrum Master"
+    },
+    {
+      "technology": "Atomic Design",
+      "detail": "Use of component libraries such as Material UI, Native Base and Bootstrap, for encapsulation and construction of components using the concepts of Atomic Design"
+    },
+    {
+      "technology": "Design Thinking, Design Sprint",
+      "detail": "I know business understanding methodologies as well as screen prototyping in the MarvelApp tool"
+    }
+  ],
+  "extra": [
+    {
+      "technology": "Game Devlopment",
+      "detail": "Unity 3D, Blender, C#. Game creation, knowledge in: textures, materials, modelagem, rigging, ragdoll, coding with C# in Unity 3D"
+    }
+  ]
+}
