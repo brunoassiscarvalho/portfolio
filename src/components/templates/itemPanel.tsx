@@ -10,7 +10,7 @@ export default function ItemPanel({ title, children }: IKnowledgePanel) {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
-        <Typography>
+        <Typography style={{textAlign:'center'}} variant="h4" >
           {title}
         </Typography>
       </Grid>

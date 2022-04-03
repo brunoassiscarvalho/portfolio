@@ -14,10 +14,17 @@
   "aboutMe": "Um apaixonado por programação e desenvolvedor Java que aprendeu e se transformou em um programador Javascript, e conhecedor de Typescript, curioso e criativo. Para mim, em primeiro lugar, aprender e entender o negócio, depois criar soluções que encantem o cliente.",
   "education": [
     {
+      "date":{"start":"01/2003", "end":"07/2008"},
       "course": "Bachelor of Business Administration with Specialization in Management Information Systems",
       "institution": "IESRIVER Instituo de Ensino Superior de Rio Verde"
     },
     {
+      "date":{"start":"01/2016", "end":"07/2017"},
+      "course": "Postgraduate in Mobile Device Development",
+      "institution": "Universitary Center IESB"
+    },
+    {
+      "date":{"start":"01/2022", "end":"07/2023"},
       "course": "Postgraduate in Mobile Device Development",
       "institution": "Universitary Center IESB"
     }
@@ -27,8 +34,9 @@
     "Cambridge Linguaskill Certification - Level B1",
     "Investment Certification - ANBIMA CPA10"
   ],
-  "experiences": [
+  "experience": [
     {
+      "date":{"start":"01/2003", "end":"07/2008"},
       "company": "Bank of Brazil (Banco do Brasil S.A)",
       "posisiton": "Fullstack developer",
       "jobs": [
@@ -38,6 +46,7 @@
       ]
     },
     {
+      "date":{"start":"01/2003", "end":"07/2008"},
       "company": "Totem",
       "posisiton": "Freelancer Fullstack JEE Developer",
       "jobs": [
@@ -45,6 +54,7 @@
       ]
     },
     {
+      "date":{"start":"01/2003", "end":"07/2008"},
       "company": "Curriculum Seguro",
       "posisiton": "Freelancer Fullstack Javascript Developer",
       "jobs": [
@@ -52,7 +62,7 @@
       ]
     }
   ],
-  "knowledges": [
+  "knowledge": [
     {
       "technology": "Javascript",
       "detail": "Ecma6 with Typescript"

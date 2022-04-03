@@ -1,11 +1,10 @@
 
 import { Card, CardContent, Typography, CardActions } from "@mui/material"
-import { Knowledege } from "../../interfaces/knowledge"
-
+import { Knowledege } from "../../interfaces/resume"
 
 export default function KnowledgeCard({ technology, detail }: Knowledege) {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 345 }}>
+    <Card sx={{ minHeight: 220 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {technology}
@@ -15,7 +14,6 @@ export default function KnowledgeCard({ technology, detail }: Knowledege) {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">Learn More</Button> */}
       </CardActions>
     </Card>
   )

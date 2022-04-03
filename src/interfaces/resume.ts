@@ -1,5 +1,33 @@
-import { Knowledege } from "./knowledge";
+
 
 export default interface Resume{
-  knowledges: Knowledege[]
+  aboutMe:string;
+  knowledge: Array<Knowledege>;
+  education: Array<Education>;
+  experience: Array<Experience>;
+
 }
+
+export interface Knowledege {
+  technology: string;
+  detail: string;
+}
+
+export interface DateRange{
+  start:string;
+  end:string;
+}
+
+export interface Education {
+  date:DateRange;
+  course: string;
+  institution: string;
+}
+
+export interface Experience {
+  date:DateRange;
+  company:string;
+  posisiton: string;
+  jobs: Array<string>;
+}
+
