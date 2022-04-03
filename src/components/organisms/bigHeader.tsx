@@ -45,7 +45,6 @@ export default function BigHeader() {
           <Button onClick={() => handleChangeTheme("defaultTheme")}>default</Button>
         </Box>
       </Grid>
-
     </Grid>
   )
 }
