@@ -4,7 +4,6 @@ import { Box, Button } from "@mui/material";
 export default function Footer() {
 
   return (
-
     <Box sx={{
       paddingTop: 10,
       paddingBottom: 10,

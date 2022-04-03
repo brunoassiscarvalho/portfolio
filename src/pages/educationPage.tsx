@@ -9,11 +9,10 @@ interface IEducationPanel {
   education: Resume['education'];
 }
 
-export default function EducationPage({ education }: IEducationPanel) {
-
+export default function EducationPage({ education }: IEducationPanel): JSX.Element {
   return (
-    <ItemPanel title="Education">      
-      <TimeLinePanel data={educationTimelineAdapter(education)}/>
+    <ItemPanel title="Education">
+      <TimeLinePanel data={educationTimelineAdapter(education)} />
     </ItemPanel>)
 
 }

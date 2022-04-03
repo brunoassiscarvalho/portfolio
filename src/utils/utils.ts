@@ -11,12 +11,12 @@ export function educationTimelineAdapter(education: Array<Education>): Array<ITi
     }
     return educationTimeLine;
   })
-}  
+}
 
 
 export function experienceTimelineAdapter(education: Array<Experience>): Array<ITimelineItem> {
 
-  return education.map(({date, company, posisiton, jobs }: Experience) => {
+  return education.map(({ date, company, posisiton, jobs }: Experience) => {
     const educationTimeLine: ITimelineItem = {
       date: date,
       title: posisiton,

@@ -1,6 +1,5 @@
 import { LinkedIn, GitHub } from "@mui/icons-material";
 import { Box, Typography, Button, Grid } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 
 export default function BigHeader() {
 
@@ -8,8 +7,6 @@ export default function BigHeader() {
     localStorage.setItem("themeName", themeName);
     window.location.reload()
   }
-
-
 
   return (
     <Grid container>

@@ -2,7 +2,7 @@
 import { Card, CardContent, Typography, CardActions } from "@mui/material"
 import { Knowledege } from "../../interfaces/resume"
 
-export default function KnowledgeCard({ technology, detail }: Knowledege) {
+export default function KnowledgeCard({ technology, detail }: Knowledege): JSX.Element {
   return (
     <Card sx={{ minHeight: 220 }}>
       <CardContent>

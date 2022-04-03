@@ -15,8 +15,7 @@ export interface ITimelineItem {
   detail?: string;
 }
 
-export default function TimeLinePanel({ data }: ITimeLinePanel) {
-  
+export default function TimeLinePanel({ data }: ITimeLinePanel) {  
   return (
     <Timeline>
       {data.map(({ date, title, subtitle, detail }: ITimelineItem) =>

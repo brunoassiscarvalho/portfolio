@@ -9,11 +9,11 @@ interface IExperiencePanel {
   experience: Resume['experience'];
 }
 
-export default function ExperiencePage({ experience }: IExperiencePanel) {
+export default function ExperiencePage({ experience }: IExperiencePanel): JSX.Element {
 
   return (
-    <ItemPanel title="Experience">      
-      <TimeLinePanel data={experienceTimelineAdapter(experience)}/>
+    <ItemPanel title="Experience">
+      <TimeLinePanel data={experienceTimelineAdapter(experience)} />
     </ItemPanel>)
 
 }

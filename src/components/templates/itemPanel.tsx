@@ -6,11 +6,11 @@ interface IKnowledgePanel {
   children: ReactChild
 }
 
-export default function ItemPanel({ title, children }: IKnowledgePanel) {
+export default function ItemPanel({ title, children }: IKnowledgePanel): JSX.Element {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
-        <Typography style={{textAlign:'center'}} variant="h4" >
+        <Typography style={{ textAlign: 'center' }} variant="h4" >
           {title}
         </Typography>
       </Grid>

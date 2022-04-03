@@ -7,7 +7,7 @@ interface IKnowledgePanel {
   knowledge: Resume['knowledge'];
 }
 
-export default function KnowledgePage({ knowledge }: IKnowledgePanel) {
+export default function KnowledgePage({ knowledge }: IKnowledgePanel): JSX.Element {
 
   return (
     <ItemPanel title="Knowledege">

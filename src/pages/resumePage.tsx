@@ -10,7 +10,7 @@ import AboutMePage from './aboutMePage';
 import BigHeader from '../components/organisms/bigHeader';
 import Footer from '../components/organisms/footer';
 
-export default function ResumePage() {
+export default function ResumePage(): JSX.Element {
 
   const { knowledge, education, experience, aboutMe }: Resume = resume;
 
