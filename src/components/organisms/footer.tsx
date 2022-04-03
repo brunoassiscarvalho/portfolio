@@ -12,10 +12,10 @@ export default function Footer() {
       flexDirection: 'column',
       backgroundColor: "primary.light"
     }}>
-      <Button startIcon={<LinkedIn />} color="inherit">
+      <Button startIcon={<LinkedIn />} color="inherit" onClick={() => window.open("https://www.linkedin.com/in/bruno-assis-carvalho-044095a2", "_blank")}>
         /in/bruno-assis-carvalho-044095a2
       </Button>
-      <Button startIcon={<GitHub />} color="inherit">
+      <Button startIcon={<GitHub />} color="inherit" onClick={() => window.open("https://github.com/brunoassiscarvalho", "_blank")}>
         /brunoassiscarvalho
       </Button>
     </Box>

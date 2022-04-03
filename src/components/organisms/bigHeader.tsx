@@ -9,6 +9,8 @@ export default function BigHeader() {
     window.location.reload()
   }
 
+
+
   return (
     <Grid container>
       <Grid item xs={12}>
@@ -34,15 +36,22 @@ export default function BigHeader() {
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <Box sx={{ backgroundColor: "primary.light" }}>
-          <Button startIcon={<LinkedIn />} color="inherit">
-            /in/bruno-assis-carvalho-044095a2
-          </Button>
-          <Button startIcon={<GitHub />} color="inherit">
-            /brunoassiscarvalho
-          </Button>
-          <Button onClick={() => handleChangeTheme("matrixTheme")}>Matrix</Button>
-          <Button onClick={() => handleChangeTheme("defaultTheme")}>default</Button>
+        <Box sx={{ backgroundColor: "primary.light", display:"flex", justifyContent: 'space-between'}} >
+          <Box>
+            <Button startIcon={<LinkedIn />} color="inherit" onClick={() => window.open("https://www.linkedin.com/in/bruno-assis-carvalho-044095a2", "_blank")}>
+              /in/bruno-assis-carvalho-044095a2
+            </Button>
+            <Button startIcon={<GitHub />} color="inherit" onClick={() => window.open("https://github.com/brunoassiscarvalho", "_blank")}>
+              /brunoassiscarvalho
+            </Button>
+          </Box>
+          <Box display={"flex"} alignItems="center">
+            <Typography>
+              Themes:
+            </Typography>
+            <Button color="inherit"  onClick={() => handleChangeTheme("matrixTheme")}>Matrix</Button>
+            <Button color="inherit"   onClick={() => handleChangeTheme("defaultTheme")}>Default</Button>
+          </Box>
         </Box>
       </Grid>
     </Grid>
