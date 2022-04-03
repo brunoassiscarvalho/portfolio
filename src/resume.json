@@ -36,30 +36,33 @@
   ],
   "experience": [
     {
-      "date":{"start":"01/2003", "end":"07/2008"},
+      "date":{"start":"08/2010", "end":"currently"},
       "company": "Bank of Brazil (Banco do Brasil S.A)",
       "posisiton": "Fullstack developer",
       "jobs": [
         "Java development with Weblogic, Struts 2",
         "System migration to AngularJS and API Rest",
         "Low code framework development. Our team developed a framework in ReactJS, Node and MongoDB to do react-native screens, for our mobile app"
-      ]
+      ],
+      "detail": "I worked with customer service from 2010 to 2013, in an agency. Then, after an internal process, I was recruited to the Technology Department where I worked as a web developer for the company customer self-service system, using Java, Javascript, CSS, HTML, Git and Maven, Weblogic technologies. Performed requirements gathering and application development. I participated in the migration of the system from the Struts framework to AngularJS, as well as the development of several features for the system. I developed on a low-code project, in which we develop a tool for building mobile applications using ReactJS, React-Native, NodeJS and MongoDB. Now I lead a team that develops a functionality, in React-Native for mobile app, in the bank's insurance sector."
     },
     {
-      "date":{"start":"01/2003", "end":"07/2008"},
+      "date":{"start":"09/2021", "end":"currently"},
       "company": "Totem",
       "posisiton": "Freelancer Fullstack JEE Developer",
       "jobs": [
         "Fullstack developer in Java with JSF, and Oracle SQL data-base"
-      ]
+      ],
+      "detail": "I work in web development in JPA applications, using Hibernate, JSF, Java 8 and Oracle database. Acting from assistance in requirements gathering, construction of the project architecture and development."
     },
     {
-      "date":{"start":"01/2003", "end":"07/2008"},
+      "date":{"start":"01/2021", "end":"09/2021"},
       "company": "Curriculum Seguro",
       "posisiton": "Freelancer Fullstack Javascript Developer",
       "jobs": [
         "Fullstack developer in Javascript with Typescript, NodeJS, ReactJS and MongoDB"
-      ]
+      ],
+      "detail":"I carried out alone the construction of a system for registering professional resumes and managing them, the project being composed of two distinct subsystems, one aimed at professionals looking for new opportunities and another aimed at employees of Curriculum Seguro, to manage the resumes. . The system was developed using the MERN stack (Mongo, Express, React, Node), in which I could exercise and learn about various aspects of software development, from understanding the business, gathering requirements, prototyping screens, developing interface, API construction, configuration of the production environment, deployment and follow-up."
     }
   ],
   "knowledge": [
