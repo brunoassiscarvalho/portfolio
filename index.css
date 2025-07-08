@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #4caf50; /* Green */
+  --secondary-color: #333333; /* Dark Gray */
+  --text-color: #b8c5b2; /* White */
+  --link-hover-color: #00ffc8; /* Orange on hover */
+}
+
+/* Fix for sticky header overlapping anchor links */
+html {
+  scroll-padding-top: 8rem; /* This should be equal to or slightly more than your header's height */
+  scroll-behavior: smooth; /* Optional, for smooth scrolling */
+}
+/* Basic Resets & Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-image: linear-gradient(0.75turn, #00000000 0%, #000000 35%),
+    url("./home-office.jpg");
+  backdrop-filter: blur(px);
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-attachment: fixed;
+  display: flex; /* Use flexbox for the overall page structure */
+  flex-direction: column; /* Stack header, container, and footer vertically */
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Header Styling */
+header {
+  position: sticky; /* Make header sticky */
+  top: 0; /* Stick to the top */
+  background-color: #00000000;
+  backdrop-filter: blur(30px);
+  color: #333;
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align header content */
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: #3a5040;
+  font-size: xx-large;
+  padding-bottom: 0.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 4rem; /* Space between navigation items */
+}
+
+header nav a {
+  color: #5d7e65;
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #4caf50; /* Orange on hover */
+}
+
+section {
+  margin: 1rem 0; /* Space between sections */
+  height: 90vh; /* Set a height for sections */
+}
+
+/* Main Content Area */
+main {
+  color: var(--text-color);
+  flex: 1; /* Allow main content to take the remaining space */
+  padding: 4rem;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  width: 50%;
+  font-size: x-large;
+}
+
+main section,
+main article {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+main h2,
+main h3 {
+  color: #3a5040;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+/* Footer Styling */
+footer {
+  position: sticky; /* Make header sticky */
+  bottom: 0;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  color: #5d7e65;
+  text-align: right;
+  padding: 1rem 3rem;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Responsive Design (Basic Example) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack menu and content vertically on small screens */
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  main {
+    padding: 15px; /* Reduce main content padding */
+  }
+}
