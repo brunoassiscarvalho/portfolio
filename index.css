@@ -8,7 +8,8 @@
 /* Fix for sticky header overlapping anchor links */
 html {
   scroll-padding-top: 8rem; /* This should be equal to or slightly more than your header's height */
-  scroll-behavior: smooth; /* Optional, for smooth scrolling */
+  scroll-behavior: smooth;
+  background-color: #3a5040; /* Optional, for smooth scrolling */
 }
 /* Basic Resets & Body Styling */
 body {
