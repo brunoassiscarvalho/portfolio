@@ -4,12 +4,12 @@ import { Knowledege } from "../../interfaces/resume"
 
 export default function KnowledgeCard({ technology, detail }: Knowledege): JSX.Element {
   return (
-    <Card sx={{ minHeight: 220 }}>
+    <Card sx={{ minHeight: 300 , boxShadow: "0 0 5px 1px", boxShadowColor: 'text.secondary' }} elevation={0}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography gutterBottom sx={{ color: 'text.secondary'}} variant="subtitle1">
           {technology}
         </Typography>
-        <Typography variant="body2">
+        <Typography sx={{ fontSize: 20 }} variant="body1">
           {detail}
         </Typography>
       </CardContent>

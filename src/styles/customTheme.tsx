@@ -24,11 +24,16 @@ export const defaultTheme: Theme = createTheme({
     },
     background: {
       default: grey[300]
-    }
+    },
+    text: { primary: grey[900], secondary:grey[700] }
   },
-  typography: {    
+ 
+  typography: { 
+    h1: {
+    color: grey[300],
+    },   
     subtitle1: {
-      fontSize: 12,
+      fontSize: 20,
     },
     fontFamily: [
       'Roboto',
@@ -57,8 +62,8 @@ export const matrixTheme: Theme = createTheme({
       main: lime[800],
     },
     background: {
-      paper: grey[800],
-      default: grey[900]
+      paper: grey[900],
+      default: '#000000'
     },
     text: { primary: green[200], secondary:green[400] }
   },

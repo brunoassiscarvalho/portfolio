@@ -9,13 +9,18 @@ import resume from '../resume.json';
 import AboutMePage from './aboutMePage';
 import BigHeader from '../components/organisms/bigHeader';
 import Footer from '../components/organisms/footer';
+import image from "../assets/images/resume-bg.jpg"; // Importing the background image
 
 export default function ResumePage(): JSX.Element {
 
   const { personal, knowledge, education, experience, aboutMe }: Resume = resume;
 
   return (
-    <Box>
+    <Box sx={{  backgroundImage: `linear-gradient(0.25turn, #000000aa 0%, #000000 70%), url(${image})`,
+                backgroundSize: '90%',
+                backgroundPositionX: 'left',
+                backgroundPositionY: '25rem',
+                backgroundRepeat: 'no-repeat',}}>
       <Grid container spacing={5}>
         <Grid item xs={12}>
           <BigHeader {...personal} />
@@ -23,7 +28,6 @@ export default function ResumePage(): JSX.Element {
         <Grid item xs={12}>
           <AboutMePage description={aboutMe} />
         </Grid>
-
         <Grid item xs={12}>
           <EducationPage education={education} />
         </Grid>

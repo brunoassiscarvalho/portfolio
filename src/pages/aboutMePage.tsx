@@ -13,12 +13,14 @@ export default function AboutMePage({ description }: Readonly<IAboutMePage>) {
       <Box sx={{
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        
       }}>
         <Box sx={{
           maxWidth: 600,
         }}>
-          <Box sx={{border: 1, borderColor: 'primary.main', padding:5}}>
+          <Box sx={{border: 1, borderColor: 'primary.main', padding:5, boxShadow: "0 0 5px 1px", boxShadowColor: 'text.secondary', borderRadius: 2,   backgroundColor:'#FFFFFF11',
+  backdropFilter: 'blur(5px)'}}>
 
             <Typography variant='h6' sx={{
               textAlign: 'center'
@@ -26,7 +28,6 @@ export default function AboutMePage({ description }: Readonly<IAboutMePage>) {
               {description}
             </Typography>
           </Box>
-
         </Box>
       </Box>
     </ItemPanel>

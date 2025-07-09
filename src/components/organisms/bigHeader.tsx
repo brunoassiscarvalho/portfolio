@@ -27,7 +27,9 @@ export default function BigHeader({name, position, socialMedia}: Readonly<Person
           flexDirection: 'column',
           flexWrap: 'wrap',
           alignContent: 'space-around',
-          backgroundColor: "primary.main"
+          backgroundColor: "primary.main",
+          backgroundImage: "linear-gradient(0.75turn, #00000000 30%, #000000 99%)",
+          
         }}>
           <Box >
             <Typography variant='h1'>

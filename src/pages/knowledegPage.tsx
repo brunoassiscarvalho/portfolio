@@ -13,7 +13,7 @@ export default function KnowledgePage({ knowledge }: Readonly<IKnowledgePanel>):
       <Box padding='2em'>
         <Grid container spacing={3}>
           {knowledge.map((knowledegeItem: Knowledege, idx: number) =>
-            <Grid item xs={12} sm={6} md={4} xl={3} key={knowledegeItem.id ?? idx}>
+            <Grid item xs={12} sm={12} md={6} xl={3} key={knowledegeItem.id ?? idx}>
               <KnowledgeCard {...knowledegeItem} />
             </Grid>
           )}
