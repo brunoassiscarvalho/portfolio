@@ -1,11 +1,19 @@
 import { LinkedIn, GitHub } from "@mui/icons-material";
-import { Box, Typography, Button, Grid } from "@mui/material";
+import { Box, Typography, Grid, IconButton, Switch } from "@mui/material";
+import { Personal } from "../../interfaces/resume";
 
-export default function BigHeader() {
+import React, { useMemo } from "react";
 
-  function handleChangeTheme(themeName: string) {
-    localStorage.setItem("themeName", themeName);
-    window.location.reload()
+export default function BigHeader({name, position, socialMedia}: Readonly<Personal>): JSX.Element {
+
+  // Determine checked state from localStorage
+  const checked = useMemo(() => {
+    return localStorage.getItem("themeName") === "defaultTheme";
+  }, []);
+
+  function handleChangeTheme(event: React.ChangeEvent<HTMLInputElement>, checked: boolean) {
+    localStorage.setItem("themeName", checked ? "defaultTheme" : "matrixTheme");
+    window.location.reload();
   }
 
   return (
@@ -23,10 +31,10 @@ export default function BigHeader() {
         }}>
           <Box >
             <Typography variant='h1'>
-              Bruno Assis Carvalho
+              {name}
             </Typography>
             <Typography variant='h3' color="text.secondary">
-              Fullstack developer
+              {position}
             </Typography>
           </Box>
 
@@ -34,20 +42,16 @@ export default function BigHeader() {
       </Grid>
       <Grid item xs={12}>
         <Box sx={{ backgroundColor: "primary.light", display:"flex", justifyContent: 'space-between'}} >
-          <Box>
-            <Button startIcon={<LinkedIn />} color="inherit" onClick={() => window.open("https://www.linkedin.com/in/bruno-assis-carvalho-044095a2", "_blank")}>
-              /in/bruno-assis-carvalho-044095a2
-            </Button>
-            <Button startIcon={<GitHub />} color="inherit" onClick={() => window.open("https://github.com/brunoassiscarvalho", "_blank")}>
-              /brunoassiscarvalho
-            </Button>
+          <Box sx={{height:80}}>
+            <IconButton size="large" color="inherit" aria-label="linkedin" onClick={() => window.open("https://www.linkedin.com/in/bruno-assis-carvalho-044095a2", "_blank")}>
+              <LinkedIn sx={{ fontSize: 50 }} />
+            </IconButton>
+            <IconButton size="large" color="inherit" onClick={() => window.open("https://github.com/brunoassiscarvalho", "_blank")}>
+              <GitHub sx={{ fontSize: 40 }} />
+            </IconButton>
           </Box>
           <Box display={"flex"} alignItems="center">
-            <Typography>
-              Themes:
-            </Typography>
-            <Button color="inherit"  onClick={() => handleChangeTheme("matrixTheme")}>Matrix</Button>
-            <Button color="inherit"   onClick={() => handleChangeTheme("defaultTheme")}>Default</Button>
+            <Switch onChange={handleChangeTheme} checked={checked} />            
           </Box>
         </Box>
       </Grid>

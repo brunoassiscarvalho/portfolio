@@ -12,13 +12,13 @@ import Footer from '../components/organisms/footer';
 
 export default function ResumePage(): JSX.Element {
 
-  const { knowledge, education, experience, aboutMe }: Resume = resume;
+  const { personal, knowledge, education, experience, aboutMe }: Resume = resume;
 
   return (
     <Box>
       <Grid container spacing={5}>
         <Grid item xs={12}>
-          <BigHeader />
+          <BigHeader {...personal} />
         </Grid>
         <Grid item xs={12}>
           <AboutMePage description={aboutMe} />

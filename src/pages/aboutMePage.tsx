@@ -5,7 +5,7 @@ interface IAboutMePage {
   description: string;
 }
 
-export default function AboutMePage({ description }: IAboutMePage) {
+export default function AboutMePage({ description }: Readonly<IAboutMePage>) {
 
   return (
     <ItemPanel title="About me">
