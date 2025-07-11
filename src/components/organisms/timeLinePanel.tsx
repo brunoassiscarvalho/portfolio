@@ -11,7 +11,7 @@ import { Typography } from "@mui/material";
 import { DateRange } from "../../interfaces/resume";
 
 interface ITimeLinePanel {
-  data: ITimelineItem[];
+  data: Array<ITimelineItem>;
 }
 
 export interface ITimelineItem {
