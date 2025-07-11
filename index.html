@@ -9,56 +9,66 @@
       name="description"
       content="Bruno Assis Carvalho, Software Engineer and Open Source Contributor"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />   
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&family=Roboto+Slab"
-      rel="stylesheet"
-    />
+   <!-- Add this inside the <head> tag of your HTML file -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+   
     <title>Bruno A Carvalho</title>
   </head>
   <body>
     <header>
-      <h1>Bruno A Carvalho</h1>
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Social Media Links">
-        <ul>
-          <li>
-            <a href="https://github.com/brunoassiscarvalho" target="_blank" rel="noopener noreferrer"><img src="./github-svgrepo-com.svg" width="34" height="34" alt="GitHub" /></a>
-          </li>
-           <li>
-            <a href="https://linkedin.com/in/bruno-carvalho-044095a2" target="_blank" rel="noopener noreferrer"><img src="./linkedin-svgrepo-com.svg" width="34" height="34" alt="LinkedIn" /></a>
-          </li>
-        </ul>
-      </nav>
+     
     </header>
 
     <main class="container">
-      <section id="About">
-        <h2>About</h2>
+      <section id="about">
+        <h1>Bruno A Carvalho</h1>
+        <a href="https://linkedin.com/in/bruno-carvalho-044095a2" target="_blank" rel="noopener noreferrer"><img src="./assets/icons/linkedin-svgrepo-com.svg" alt="LinkedIn" /></a>
+        <a href="https://github.com/brunoassiscarvalho" target="_blank" rel="noopener noreferrer"><img src="./assets/icons/github-svgrepo-com.svg" alt="GitHub" /></a>
         <p>
-          Work as a software engineer, driving the development of innovative digital solutions, with a focus on usability and user experience, and on building highly reliable, scalable, and resilient systems.
+        <h2><b>Creative</b> Digital Solutions <b>Engineer</b></h2>
+        <p>
+          I am a <b>creative software engineer</b>, driving the development of innovative digital solutions, with a focus on <b>usability</b> and <b>user experience</b>, and on building highly <b>reliable</b>, <b>scalable</b>, and <b>resilient</b> systems.
         </p>
+      </section>
+      <section id="contributions">
+        <h2>contributions</h2>
+        <ul>
+          <li>
+            <span class="icon neon" ></span>
+            <p>Development of various features in banking solutions for a major company, <b>impacting</b> over 60 million customers and involving more than 4,000 developers.</p>
+          </li>         
+          <li>
+            <span class="icon neon"></span>
+            <p>Contributed to the creation of a low-code system for mobile development, which reduced solution delivery time and generated significant cost <b>savings</b> for the company.</p>
+          </li>
+          <li>
+            <span class="icon neon" ></span>
+            <p>Applied SRE and observability practices to insurance contracting systems, <b>improving</b> overall system availability from 97% to 99%.</p>
+          </li>
+        </ul>       
+      </section>
+       <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            2023
+            <span class="rotated-square neon"></span>
+            <p>MBA in <b>Cloud engineering & architecture</b> at FIAP, Brazil.</p>
+          </li>
+          <li>
+            2017
+            <span class="rotated-square neon"></span>
+            <p>Postgraduate in <b>Mobile Device Development</b> at IESB, Brazil.</p>
+          </li>         
+          <li>
+            2008
+            <span class="rotated-square neon"></span>
+            <p>Bachelor of <b>Management Information Systems</b> at IESRIVER, Brazil.</p>
+          </li>
+        </ul>       
       </section>
       <section id="Services">
         <h2>Services</h2>
@@ -68,6 +78,19 @@
         <p>Agile & Leadership: Active participation in agile squads (Scrum/Kanban), with experience as a facilitator and focus on continuous value delivery.</p>
         <p>Component Libraries & Design Systems: Development of reusable design systems using Atomic Design with Material UI, Native Base, and Bootstrap.</p>       
         <p>Platform Engineering & DX: Implementation of tools and standards to accelerate development, boost team autonomy, and reduce cognitive load.</p>
+      </section>
+      <section id="Projects">
+        <h2>Projects</h2>
+        <p>
+          This is the main content area of your webpage. We're using semantic
+          HTML for better accessibility and SEO.
+        </p>
+        <div class="grid-2x2">
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+          <div>Item 4</div>
+        </div>
       </section>
       <section id="Contact">
         <h2>Contact</h2>

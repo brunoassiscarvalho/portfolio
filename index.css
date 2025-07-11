@@ -1,128 +1,144 @@
 :root {
-  --primary-color: #4caf50; /* Green */
-  --secondary-color: #333333; /* Dark Gray */
-  --text-color: #b8c5b2; /* White */
-  --link-hover-color: #00ffc8; /* Orange on hover */
+  --primary-color: #68d5bc; /* Green */
+  --primary-color-rgb: 104, 213, 188; /* RGB for Green */
+  --secondary-color: #000000; /* Dark Gray */
+  --secondary-color-rgb: 0, 0, 0; /* RGB for Dark Gray */
+  --text-color: #ffffff; /* White */
+  --link-hover-color: #00ffc8; /* Cyan on hover */
 }
 
-/* Fix for sticky header overlapping anchor links */
-html {
-  scroll-padding-top: 8rem; /* This should be equal to or slightly more than your header's height */
-  scroll-behavior: smooth;
-  background-color: #3a5040; /* Optional, for smooth scrolling */
-}
-/* Basic Resets & Body Styling */
 body {
-  font-family: Arial, sans-serif;
-  font-size: large;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: "Kanit", sans-serif;
+  background-color: var(--secondary-color);
   color: var(--text-color);
-  background-image: linear-gradient(0.75turn, #00000000 0%, #000000 35%),
-    url("./home-office.jpg");
-  backdrop-filter: blur(px);
-  background-size: cover;
-  background-position-x: right;
-  background-position-y: bottom;
-  background-attachment: fixed;
-  display: flex; /* Use flexbox for the overall page structure */
-  flex-direction: column; /* Stack header, container, and footer vertically */
-  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
-}
-
-/* Header Styling */
-header {
-  position: sticky; /* Make header sticky */
-  top: 0; /* Stick to the top */
-  background-color: #00000000;
-  backdrop-filter: blur(30px);
-  color: #333;
-  padding: 0.5rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Center align header content */
-}
-
-header h1 {
-  text-transform: uppercase;
-  color: #3a5040;
-  font-size: xx-large;
-  padding-bottom: 0.5rem;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 4rem; /* Space between navigation items */
-}
-
-header nav a {
-  color: #5d7e65;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-header nav a:hover {
-  color: #4caf50; /* Orange on hover */
+  font-weight: lighter;
 }
 
 section {
-  margin: 1rem 0; /* Space between sections */
-  height: 90vh; /* Set a height for sections */
+  margin: 0 auto;
+  padding: 5rem 0.5rem;
+  width: 80%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter; /* Lighter font weight for headings */
 }
 
-/* Main Content Area */
-main {
-  color: var(--text-color);
-  flex: 1; /* Allow main content to take the remaining space */
-  padding: 4rem;
-  box-sizing: border-box; /* Include padding in the width calculation */
-  width: 50%;
-  font-size: x-large;
-}
-
-main section,
-main article {
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-main h2,
-main h3 {
-  color: #3a5040;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
   text-transform: uppercase;
-  font-size: xx-large;
-  font-weight: normal;
 }
 
-/* Footer Styling */
-footer {
-  position: sticky; /* Make header sticky */
-  bottom: 0;
-  background-color: transparent;
-  backdrop-filter: blur(30px);
-  color: #5d7e65;
-  text-align: right;
-  padding: 1rem 3rem;
-  margin-top: auto; /* Push the footer to the bottom */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
 }
 
-/* Responsive Design (Basic Example) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack menu and content vertically on small screens */
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
+b {
+  color: var(--primary-color);
+}
 
-  main {
-    padding: 15px; /* Reduce main content padding */
-  }
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: 1fr 1fr; /* 2 rows */
+  gap: 1rem; /* optional: space between items */
+}
+
+.grid-2x2 > div {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 80%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; /* Vertically center icon and text */
+  gap: 2rem; /* Space between icon and text */
+  justify-content: flex-start;
+}
+
+.icon {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  max-height: 3rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.neon {
+  box-shadow: 0 0 1px 1px var(--primary-color), 0 0 4px 2px var(--primary-color);
+  background: radial-gradient(
+    rgba(var(--primary-color-rgb), 0.5) 5%,
+    rgba(var(--primary-color-rgb), 0.2) 100%
+  );
+  backdrop-filter: blur(35px);
+  transition: box-shadow 0.2s;
+}
+
+.rotated-square {
+  width: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+#about {
+  height: 40vh;
+  padding: 10rem;
+  padding-top: 15rem;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--secondary-color-rgb), 0.1) 90%,
+      rgba(var(--secondary-color-rgb), 0.9) 100%
+    ),
+    radial-gradient(
+      rgba(var(--primary-color-rgb), 0.1) 0%,
+      rgba(var(--primary-color-rgb), 0.2) 100%
+    ),
+    url("./assets/images/laptop-colorful-code.png");
+  background-size: cover;
+  background-position: bottom center;
+}
+#about h2 {
+  color: var(--text-color);
+}
+#about a img {
+  width: 34px;
+  height: 34px;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+#about p {
+  max-width: 50rem;
 }
