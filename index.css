@@ -6,13 +6,18 @@
   --text-color: #ffffff; /* White */
   --link-hover-color: #00ffc8; /* Cyan on hover */
 }
+html {
+  scroll-behavior: smooth;
+  background-color: var(--secondary-color);
+}
 
 body {
   margin: 0;
   font-family: "Kanit", sans-serif;
   background-color: var(--secondary-color);
   color: var(--text-color);
-  font-weight: lighter;
+  font-weight: 200;
+  font-size: x-large;
 }
 
 section {
@@ -26,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: lighter; /* Lighter font weight for headings */
+  font-weight: 300; /* Lighter font weight for headings */
 }
 
 h1 {
@@ -41,16 +46,26 @@ h2 {
   margin-bottom: 1rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  opacity: 0;
+  animation: fadeInLeft 3s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: 10%;
+  animation-range-end: 25%;
 }
 
 b {
   color: var(--primary-color);
+  font-weight: 500;
 }
 
 section p {
-  font-size: 1.2rem;
   line-height: 1.5;
-  font-weight: lighter;
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInRight 3s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: 10%;
+  animation-range-end: 25%;
 }
 
 .grid-2x2 {
@@ -99,6 +114,12 @@ li {
   );
   backdrop-filter: blur(35px);
   transition: box-shadow 0.2s;
+  opacity: 0;
+  scale: 0.8;
+  animation: fadeInBehind 3s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: 10%;
+  animation-range-end: 20%;
 }
 
 .rotated-square {
@@ -141,4 +162,135 @@ li {
 
 #about p {
   max-width: 50rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-out-up {
+  opacity: 1;
+  animation: fadeOutUp 3s linear;
+  animation-timeline: view();
+  animation-range: exit;
+}
+
+.fade-in-left {
+  opacity: 0;
+  animation: fadeInLeft 2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.scroll-watcher {
+  width: 5px;
+  position: fixed;
+  left: 0;
+  z-index: 10000;
+  background-color: rgba(var(--primary-color-rgb), 0.5);
+  height: 100%;
+  scale: 1 0;
+  animation: scroll-watcher 1s linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+    opacity: 0.1;
+  }
+}
+
+@keyframes fadeInBehind {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.fade-in-behind {
+  opacity: 0;
+  scale: 0.8;
+  animation: fadeInBehind 3s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: 5%;
+  animation-range-end: 10%;
+}
+
+#education ul li > p:first-of-type {
+  opacity: 0;
+  animation: fadeInLeft 3s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: 10%;
+  animation-range-end: 25%;
+}
+
+/* #about * {
+  opacity: 1;
+  animation: fadeOutUp 3s linear;
+  animation-timeline: view();
+  animation-range: exit; 
+} */
+
+.fade-out-front {
+  animation: fadeOutFront 3s ease-out forwards;
+  animation-timeline: view();
+  animation-range: exit; /* styles for all descendants of #about */
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+}
+
+@keyframes fadeOutFront {
+  25% {
+    opacity: 1;
+  }
+  85%,
+  100% {
+    opacity: 0;
+    scale: 2;
+    transform: translateY(-20rem);
+  }
 }
